@@ -70,6 +70,10 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.25;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 { 
+    margin-top: 0;
 }
 address { 
     font-style: normal;
@@ -78,20 +82,29 @@ address {
 ul { 
     list-style: none;
 }
+
+.container { 
+    margin: 0 auto;
+    max-width: 1272px;
+    padding: 0 16px;
+    width: 100%;
+}
+
+/* button */
 .button {
     background: var(--accent-main-color);
     border: 2px solid var(--accent-main-color);
     border-radius: 32px;
     color: var(--white);
     font-weight: 600;
-
-    height: 53px;
-    width: 213px;
+    padding: 16px 32px;
 }
 .button:hover { 
     background: transparent;
     color: var(--black);
 }
+
+/* nav */
 
 .nav-link { 
     color: var(--secondary-main-color);
@@ -103,27 +116,50 @@ ul {
     font-weight: 700;
 }
 
+/* about us */
+
+.hero-section { 
+    padding: 123px 0;
+}
+
 .hero-title { 
     color: var(--accent-main-color);
     font-family: var(--secondary-font);
     font-size: 140px;
     font-weight: 700;
+
+    margin-bottom: 0;
+    width: 529px;
 }
 
+/* why us */
+.why-us { 
+    padding-top: 83px;
+}
+
+/* section */
+
+.section { 
+    padding: 48px 0;
+}
 .section-title { 
     color: var(--secondary-main-color);
     font-weight: 700;
+
 }
 
 .section-title .accent { 
     color: var(--accent-main-color);
 }
 
+/* procedures  */
 .procedures-title { 
     color: var(--white);
     font-style: 22px;
     line-height: 1.1;
 }
+
+/* address */
 
 .address-link { 
     color: var(--white);
