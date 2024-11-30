@@ -116,6 +116,20 @@ ul {
     font-weight: 700;
 }
 
+.header-container { 
+    display: flex;
+    align-content: center;
+}
+
+.header-nav { 
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.header-menu { 
+    display: flex;
+}
+
 /* about us */
 
 .hero-section { 
