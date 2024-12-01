@@ -59,19 +59,21 @@
     --white: #fff;
     --black: #000;
     --grey-copyright: rgba(116, 114, 114, 1);
+    --grey-hero-info: rgba(74, 74, 74, 1);
 
-    --main-font:"Roboto", sans-serif;
-    --secondary-font: "Play", sans-serif;;
+    --main-font-roboto:"Roboto", sans-serif;
+    --secondary-font-play: "Play", sans-serif;;
 
     --font-size: 18px;
 }
 body { 
-    font-family: var(--main-font);
+    font-family: var(--main-font-roboto);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.25;
     margin: 0;
 }
+
 h1, h2, h3, h4, h5, h6 { 
     margin-top: 0;
 }
@@ -81,6 +83,8 @@ address {
 
 ul { 
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .container { 
@@ -116,34 +120,83 @@ ul {
     font-weight: 700;
 }
 
+/* header */
+
 .header-container { 
     display: flex;
-    align-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 .header-nav { 
     display: flex;
     align-items: center;
     flex-grow: 1;
+    gap: 40px;
 }
 .header-menu { 
     display: flex;
+    flex-grow: 1;
+    gap: 56px;
+    justify-content: center;
 }
 
-/* about us */
+/* hero section */
+
+.hero-container { 
+    display: flex;
+    flex-direction: column;
+
+    align-items: baseline;
+    flex-basis: 529px;
+    justify-content: center;
+}
 
 .hero-section { 
+    background-image: url(/images/hero-section-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+
     padding: 123px 0;
 }
 
 .hero-title { 
     color: var(--accent-main-color);
-    font-family: var(--secondary-font);
+    font-family: var(--secondary-font-play);
     font-size: 140px;
     font-weight: 700;
 
-    margin-bottom: 0;
+    margin-bottom: 40px;
+    line-height: 0.9;
     width: 529px;
+}
+
+.hero-text { 
+    color: var(--grey-hero-info);
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 238px;
+}
+
+/* about us */
+.about-container { 
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+
+.about-us-title { 
+    font-family: var(--secondary-font-play);
+    max-width: 529px;
+}
+
+.about-us-text { 
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 709px;
 }
 
 /* why us */
@@ -158,8 +211,11 @@ ul {
 }
 .section-title { 
     color: var(--secondary-main-color);
+    font-size: 64px;
     font-weight: 700;
-
+}
+.section-title.centered { 
+    text-align: center;
 }
 
 .section-title .accent { 
@@ -167,11 +223,52 @@ ul {
 }
 
 /* procedures  */
+
+.procedure-card {
+    background: linear-gradient(180.05deg, 
+    rgba(1, 28, 68, 0) 48.53%, 
+    rgba(1, 28, 68, 0.725825) 84.61%, 
+    var(--secondary-main-color) 101.39%);
+    border-radius: 4px 120px; 
+    height: 456px;
+}
 .procedures-title { 
     color: var(--white);
     font-style: 22px;
     line-height: 1.1;
 }
+
+.procedures-list { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.procedures-item { 
+    flex-basis: calc((100% - 40px)/3);
+}
+
+/* carousel */
+
+.carousel-btn { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: 1px solid var(--secondary-main-color);
+    border-radius: 50%;
+    cursor: pointer;
+    fill: var(--secondary-main-color);
+    height: 44px;
+    width: 44px;
+}
+.carousel-btn:hover { 
+    background: var(--accent-main-color);
+    border: 1px solid var(--white);
+    fill: var(--white);
+}
+
 
 /* address */
 
