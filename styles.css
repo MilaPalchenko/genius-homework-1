@@ -203,6 +203,34 @@ ul {
 .why-us { 
     padding-top: 83px;
 }
+.why-us-wrap {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    justify-content: center;
+}
+
+.why-us-title { 
+    margin: 0 auto;
+    margin-bottom: 48px;
+    max-width: 450px;
+}
+
+.why-us-item { 
+    border-radius: 32px;
+    box-shadow: 0 4px 4px rgba(168, 198, 245, 0.38);
+    text-align: center;
+    height: 181px;
+    width: 316px;
+}
+
+.why-us-icon { 
+    fill: var(--accent-main-color);
+}
+
+.why-us-text { 
+    padding: 0 32px;
+}
 
 /* section */
 
@@ -269,6 +297,13 @@ ul {
     fill: var(--white);
 }
 
+/* footer */
+footer { 
+    background:var(--secondary-main-color);
+}
+.footer-icons { 
+    fill: var(--white);
+}
 
 /* address */
 
@@ -289,4 +324,5 @@ ul {
     color: var(--grey-copyright); 
     font-style: 13px;
     line-height: 1.2;
+    margin: 0;
 }
