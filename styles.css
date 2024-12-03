@@ -87,6 +87,10 @@ ul {
     padding: 0;
 }
 
+a { 
+    display: inline-block;
+}
+
 .container { 
     margin: 0 auto;
     max-width: 1272px;
@@ -246,9 +250,12 @@ ul {
     text-align: center;
 }
 
-.section-title .accent { 
+.section-title .accent,
+p .accent  { 
     color: var(--accent-main-color);
 }
+
+
 
 /* procedures  */
 
@@ -261,11 +268,16 @@ ul {
     height: 456px;
 }
 .procedures-title { 
-    color: var(--white);
+    color: var(--black);
     font-style: 22px;
     line-height: 1.1;
 }
 
+.formats-container { 
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
 .procedures-list { 
     display: flex;
     flex-wrap: wrap;
@@ -276,11 +288,13 @@ ul {
     flex-basis: calc((100% - 40px)/3);
 }
 
+
 /* carousel */
 
 .carousel-btn { 
     display: flex;
     align-items: center;
+    flex-shrink: 0;
     justify-content: center;
 
     background: transparent;
@@ -297,10 +311,59 @@ ul {
     fill: var(--white);
 }
 
-/* footer */
-footer { 
-    background:var(--secondary-main-color);
+/* contacts */
+
+.contacts { 
+    padding-bottom: 96px;
 }
+
+.contacts-format { 
+    display: flex;
+    gap: 32px;
+}
+
+.contact-map { 
+    flex-shrink: 0;
+    border-radius: 32px;
+}
+
+/* footer */
+.footer { 
+    background:var(--secondary-main-color);
+    padding: 56px 0;
+}
+
+.footer-container { 
+    display: flex;
+    gap: 20px;
+
+}
+
+.footer-nav,
+.footer-address {  
+    display: flex ;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-logo,
+.footer-menu,
+.address-list,
+.address-info { 
+    flex-grow: 1;
+}
+
+.footer-link { 
+    color: var(--white);
+    text-decoration: none;
+
+    padding-bottom: 16px;
+}
+.footer-link:hover { 
+    color: var(--accent-main-color);
+    font-weight: 700;
+}
+
 .footer-icons { 
     fill: var(--white);
 }
@@ -312,6 +375,7 @@ footer {
     font-style: 16px;
     line-height: 1.2;
     text-decoration: none;
+    padding-bottom: 16px;
 }
 
 .address-link:hover { 
