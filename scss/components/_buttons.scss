@@ -5,8 +5,8 @@
     color: var(--white);
     font-weight: 600;
     padding: 16px 32px;
-}
-.button:hover {
-    background: transparent;
-    color: var(--black);
+    &:hover {
+        background: transparent;
+        color: var(--black);
+    }
 }

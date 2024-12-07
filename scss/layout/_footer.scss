@@ -1,0 +1,84 @@
+.footer {
+    position: relative;
+
+    background: var(--secondary-main-color);
+    padding: 56px 0;
+
+    &__container {
+        display: flex;
+        gap: 20px;
+    }
+    &__nav,
+    &__address {
+        display: flex;
+        flex-basis: 50%;
+        gap: 20px;
+    }
+    &__logo,
+    &__menu,
+    &__list,
+    &__info {
+        flex-grow: 1;
+    }
+    &__link {
+        color: var(--white);
+        text-decoration: none;
+
+        padding-bottom: 16px;
+        transition: color 0.3s;
+        &:hover {
+            color: var(--accent-main-color);
+        }
+    }
+    &__icons-grouped { 
+        display: flex;
+    }
+    &__icons {
+        fill: var(--white);
+        margin-right:24px;
+    }
+    &::after {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        background-image: url(/images/cosmetics-decor.png);
+
+        content: "";
+        height: 152px;
+        width: 247px;
+    }
+}
+
+.address {
+    &__logo,
+    &__menu,
+    &__list,
+    &__info {
+        flex-grow: 1;
+    }
+    &__link {
+        color: var(--white);
+        font-style: 16px;
+        line-height: 1.2;
+        text-decoration: none;
+        padding-bottom: 16px;
+        transition: color 0.3s;
+        max-width: 203px;
+        &:hover {
+            color: var(--accent-main-color);
+            font-style: 16px;
+            line-height: 1.2;
+        }
+    }
+
+    &__copyright {
+        color: var(--grey-copyright);
+        font-style: 13px;
+        line-height: 1.2;
+        margin: 0;
+    }
+}
+
+
+

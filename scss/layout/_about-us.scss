@@ -1,0 +1,21 @@
+.about {
+    &__container {
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+    }
+    &__title {
+        font-family: var(--secondary-font-play);
+        max-width: 529px;
+    }
+    &__text {
+        font-size: 22px;
+        line-height: 1.8;
+        margin-bottom: 40px;
+        max-width: 709px;
+
+        &:last-child{ 
+            margin-bottom: 0;
+        }
+    }
+}
