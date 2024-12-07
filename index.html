@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dist/main.css">
     <title>Beauty Zone</title>
 </head>
 
@@ -131,21 +131,21 @@
                     <ul class="procedures-list">
                         <li class="procedures-item">
                             <article class="procedure-card">
+                                <img src="images/procedures-image-1.jpg" alt="" class="format-image">
                                 <h3 class="procedures-title">Маски для обличчя</h3>
-                                <img src="images/procedures-image-1.jpg" alt="" class="procedures-image">
                             </article>
 
                         </li>
                         <li class="procedures-item">
                             <article class="procedure-card">
+                                <img src="images/procedures-image-2.jpg" alt="" class="format-image">
                                 <h3 class="procedures-title">Маски для обличчя</h3>
-                                <img src="images/procedures-image-2.jpg" alt="">
                             </article>
                         </li>
                         <li class="procedures-item">
                             <article class="procedure-card">
+                                <img src="images/procedures-image-3.jpg" alt="" class="format-image">
                                 <h3 class="procedures-title">Маски для обличчя</h3>
-                                <img src="images/procedures-image-3.jpg" alt="">
                             </article>
                         </li>
                     </ul>
@@ -249,7 +249,9 @@
             <p class="modal-text"> Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок</p>
             <form name="modal-form" autocomplete="off" novalidate>
                 <div class="form-field">
-                    <input class="form-input" type="text" name="user-name" id="user-name">
+                    <input class="form-input" type="text" name="user-name" id="user-name"
+                    minlength="2"
+                    maxlength="20">
                     <label class="form-label" for="user-name">Ваше ім'я та прізвище</label>
                 </div>
                 <div class="form-field">
