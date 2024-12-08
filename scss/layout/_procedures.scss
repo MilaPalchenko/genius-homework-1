@@ -8,7 +8,14 @@
 }
 
 .our-procedures {
-    &__card {
+    &__card {   
+        transition: transform 0.3s;
+    
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    &__container { 
         position: relative;
 
         display: flex;
@@ -24,12 +31,7 @@
         );
         border-radius: 4px 120px;
         height: 456px;
-        transition: transform 0.3s;
         width: 344px;
-
-        &:hover {
-            transform: scale(1.05);
-        }
     }
 
     &__title {
