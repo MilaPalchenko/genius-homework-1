@@ -281,6 +281,22 @@ p .accent {
   margin-bottom: 24px;
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.pagination__btn {
+  background-color: var(--grey-copyright);
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+.pagination__btn--active {
+  background-color: var(--accent-main-color);
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -400,9 +416,6 @@ p .accent {
 .our-procedures__card {
   transition: transform 0.3s;
 }
-.our-procedures__card:hover {
-  transform: scale(1.05);
-}
 .our-procedures__container {
   position: relative;
   display: flex;
@@ -425,8 +438,7 @@ p .accent {
 }
 .our-procedures__list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  margin-bottom: 32px;
 }
 .our-procedures__item {
   flex-basis: calc((100% - 40px) / 3);
@@ -439,6 +451,10 @@ p .accent {
   width: 100%;
   z-index: -1;
   border-radius: 4px 120px;
+}
+
+.swiper-container {
+  overflow: hidden;
 }
 
 .contacts {

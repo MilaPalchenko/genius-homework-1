@@ -10,10 +10,6 @@
 .our-procedures {
     &__card {   
         transition: transform 0.3s;
-    
-        &:hover {
-            transform: scale(1.05);
-        }
     }
     &__container { 
         position: relative;
@@ -46,8 +42,7 @@
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
+        margin-bottom: 32px;
     }
 
     &__item {
@@ -67,3 +62,6 @@
     }
 }
 
+.swiper-container { 
+    overflow: hidden;
+}
