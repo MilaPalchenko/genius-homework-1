@@ -2,6 +2,7 @@
     position: relative;
 
     background: var(--secondary-main-color);
+    font-size: 16px;
     padding: 56px 0;
 
     &__container {
@@ -62,7 +63,6 @@
     
     &__link {
         color: var(--white);
-        font-style: 16px;
         line-height: 1.2;
         text-decoration: none;
         padding-bottom: 16px;
@@ -70,7 +70,6 @@
         max-width: 203px;
         &:hover {
             color: var(--accent-main-color);
-            font-style: 16px;
             line-height: 1.2;
         }
     }
