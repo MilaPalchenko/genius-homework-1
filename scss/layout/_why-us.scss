@@ -15,18 +15,16 @@
     }
     
     &__item {
+        background-color: var(--white);
         border-radius: 32px;
         box-shadow: 0 4px 4px rgba(168, 198, 245, 0.38);
         text-align: center;
-        height: 181px;
-        width: 316px;
+        padding: 24px 32px;
     }
 
     &__icon {
         fill: var(--accent-main-color);
-    }
-
-    &__text {
-        padding: 0px 32px;
+        height: 48px;
+        width: 48px;
     }
 }

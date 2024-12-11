@@ -8,18 +8,20 @@
         display: flex;
         gap: 20px;
     }
+    
     &__nav,
     &__address {
         display: flex;
         flex-basis: 50%;
         gap: 20px;
     }
+    
     &__logo,
     &__menu,
-    &__list,
-    &__info {
+    &__list-group {
         flex-grow: 1;
     }
+
     &__link {
         color: var(--white);
         text-decoration: none;
@@ -30,13 +32,16 @@
             color: var(--accent-main-color);
         }
     }
+
     &__icons-grouped { 
         display: flex;
     }
+
     &__icons {
         fill: var(--white);
         margin-right:24px;
     }
+
     &::after {
         position: absolute;
         bottom: 0;
@@ -51,12 +56,10 @@
 }
 
 .address {
-    &__logo,
-    &__menu,
-    &__list,
     &__info {
         flex-grow: 1;
     }
+    
     &__link {
         color: var(--white);
         font-style: 16px;

@@ -105,6 +105,12 @@ a {
   width: 100%;
 }
 
+.background-multisection {
+  background-image: url(/images/background-rest.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .section {
   padding: 48px 0;
 }
@@ -114,7 +120,6 @@ a {
   font-size: 64px;
   font-weight: 700;
 }
-
 .section-title.centered {
   text-align: center;
 }
@@ -138,6 +143,7 @@ p .accent {
   border: 2px solid var(--accent-main-color);
   border-radius: 32px;
   color: var(--white);
+  cursor: pointer;
   font-weight: 600;
   padding: 16px 32px;
 }
@@ -304,8 +310,8 @@ p .accent {
   padding: 32px 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.2509803922);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 .header__container {
   display: flex;
@@ -329,9 +335,8 @@ p .accent {
 }
 
 .hero-section {
-  background-image: linear-gradient(89.38deg, #ffffff 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%), url(/images/hero-section-background.jpg);
+  background-image: linear-gradient(89.38deg, #ffffff 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%), url(/images/hero-background.svg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: right top;
   padding: 123px 0;
 }
@@ -369,10 +374,14 @@ p .accent {
   max-width: 529px;
 }
 .about__text {
+  color: var(--secondary-main-color);
   font-size: 22px;
   line-height: 1.8;
   margin-bottom: 40px;
   max-width: 709px;
+}
+.about__text--accent {
+  font-weight: 600;
 }
 .about__text:last-child {
   margin-bottom: 0;
@@ -393,17 +402,16 @@ p .accent {
   max-width: 450px;
 }
 .why-us__item {
+  background-color: var(--white);
   border-radius: 32px;
   box-shadow: 0 4px 4px rgba(168, 198, 245, 0.38);
   text-align: center;
-  height: 181px;
-  width: 316px;
+  padding: 24px 32px;
 }
 .why-us__icon {
   fill: var(--accent-main-color);
-}
-.why-us__text {
-  padding: 0px 32px;
+  height: 48px;
+  width: 48px;
 }
 
 .our-procedures__container,
@@ -516,7 +524,7 @@ p .accent {
   flex-basis: 50%;
   gap: 20px;
 }
-.footer__logo, .footer__menu, .footer__list, .footer__info {
+.footer__logo, .footer__menu, .footer__list-group {
   flex-grow: 1;
 }
 .footer__link {
@@ -545,7 +553,7 @@ p .accent {
   width: 247px;
 }
 
-.address__logo, .address__menu, .address__list, .address__info {
+.address__info {
   flex-grow: 1;
 }
 .address__link {

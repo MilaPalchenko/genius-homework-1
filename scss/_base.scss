@@ -42,6 +42,13 @@ a {
     width: 100%;
 }
 
+
+.background-multisection { 
+    background-image: url(/images/background-rest.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .section {
     padding: 48px 0;
 }
@@ -50,10 +57,10 @@ a {
     color: var(--secondary-main-color);
     font-size: 64px;
     font-weight: 700;
-}
 
-.section-title.centered {
-    text-align: center;
+    &.centered { 
+        text-align: center;
+    }
 }
 
 .section-title .accent,

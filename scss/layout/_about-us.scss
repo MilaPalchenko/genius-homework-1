@@ -9,10 +9,14 @@
         max-width: 529px;
     }
     &__text {
+        color: var(--secondary-main-color);
         font-size: 22px;
         line-height: 1.8;
         margin-bottom: 40px;
         max-width: 709px;
+        &--accent { 
+            font-weight: 600;
+        }
 
         &:last-child{ 
             margin-bottom: 0;
