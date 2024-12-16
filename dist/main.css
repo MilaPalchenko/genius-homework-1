@@ -653,9 +653,6 @@ p .accent {
   fill: var(--white);
   margin-right: 24px;
 }
-.footer__icons-link {
-  margin: 0 auto;
-}
 @media screen and (min-width: 1280px) {
   .footer::after {
     position: absolute;

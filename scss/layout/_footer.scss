@@ -57,9 +57,7 @@
         fill: var(--white);
         margin-right: 24px;
     }
-    &__icons-link { 
-        margin: 0 auto;
-    }
+    
 
     @media screen and (min-width: $bp-desktop) {
         &::after {
