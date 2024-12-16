@@ -487,6 +487,7 @@ p .accent {
   box-shadow: 0 4px 4px rgba(168, 198, 245, 0.38);
   text-align: center;
   padding: 24px 32px;
+  max-width: 650px;
 }
 .why-us__icon {
   fill: var(--accent-main-color);
@@ -555,7 +556,7 @@ p .accent {
   gap: 32px;
   justify-content: center;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 480px) {
   .contacts-section__container {
     flex-direction: row;
   }
@@ -565,7 +566,7 @@ p .accent {
   width: 100%;
   padding: 0 -20px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 480px) {
   .contacts-section__map {
     border-radius: 32px;
     height: 481px;
