@@ -38,12 +38,15 @@ a {
 .container {
     margin: 0 auto;
     max-width: 1272px;
-    padding: 0 16px;
+    padding: 0 20px;
     width: 100%;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 0 16px;
+    }
 }
 
-
-.background-multisection { 
+.background-multisection {
     background-image: url(/images/background-rest.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,10 +58,17 @@ a {
 
 .section-title {
     color: var(--secondary-main-color);
-    font-size: 64px;
-    font-weight: 700;
+    font-family: var(--secondary-font-play);
+    font-size: 32px;
+    font-weight: 500;
 
-    &.centered { 
+    @media screen and (min-width: $bp-desktop) {
+        font-size: 64px;
+        font-weight: 700;
+        padding: 0;
+    }
+
+    &.centered {
         text-align: center;
     }
 }
@@ -68,7 +78,7 @@ p .accent {
     color: var(--accent-main-color);
 }
 
-.visually-hidden { 
+.visually-hidden {
     position: absolute;
     left: -10000px;
     top: auto;

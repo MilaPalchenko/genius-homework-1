@@ -4,9 +4,12 @@
     border-radius: 32px;
     color: var(--white);
     cursor: pointer;
+    font-size: 16px;
     font-weight: 600;
     padding: 16px 32px;
-
+    @media screen and (min-width: $bp-desktop) {
+        font-style: 18px;
+    }
     &:hover {
         background: transparent;
         color: var(--black);

@@ -27,7 +27,6 @@
                         <li><a class="nav-link" href="#why-us">Чому ми</a></li>
                         <li><a class="nav-link" href="#our-procedures">Наші процедури</a></li>
                         <li><a class="nav-link" href="#contacts">Контакти</a></li>
-
                 </nav>
                 <div class="socials-links-icons">
                     <ul class="header__menu">
@@ -48,6 +47,19 @@
                             </a></li>
                     </ul>
                 </div>
+                <button type="button" class="header__burger menu-btn-open">
+                    <svg height="24" width="24" class="">
+                        <use href="/images/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
+
+            </div>
+            <div class="mobile-menu">
+                <button class="mobile-menu__btn-close menu-btn-close" type="button">
+                    <svg height="12" width="12" class="mobile-menu__burger-icon">
+                        <use href="/images/icons.svg#icon-burger-close"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
@@ -77,7 +89,8 @@
                             </h2>
                             <p class="about__text">Наша косметологічна клініка пропонує вам професійні послуги
                                 з догляду за шкірою обличчя та тіла. </p>
-                            <p class="about__text">B <span class="about__text--accent">Beauty Zone</span> ми гарантуємо найвищі стандарти якості
+                            <p class="about__text">B <span class="about__text--accent">Beauty Zone</span> ми гарантуємо
+                                найвищі стандарти якості
                                 та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам
                                 підтримувати
                                 свою
@@ -85,7 +98,7 @@
                                 З нами краса назавжди!</p>
                         </article>
 
-                        <aside>
+                        <aside class="about__side-image">
                             <img src="/images/before-after-pic.svg" alt="">
                         </aside>
                     </div>
@@ -212,7 +225,7 @@
                     <div class="contacts-section__container">
                         <iframe class="contacts-section__map"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4757931944964!2d30.77264847656058!3d50.50671337160291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2sTarasa%20Shevchenka%20St%2C%205%2C%20Brovary%2C%20Kyivs&#39;ka%20oblast%2C%2007400!5e0!3m2!1sen!2sua!4v1732576478017!5m2!1sen!2sua"
-                            width="605" height="481" style="border:0;" allowfullscreen="" loading="lazy"
+                             style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                         <div class="contacts__form">
@@ -250,7 +263,7 @@
         </div>
     </main>
 
-    <footer class="footer">
+   <footer class="footer">
         <div class="container">
             <div class="footer__container">
                 <nav class="footer__nav">
@@ -278,17 +291,17 @@
                                     вул. Тараса Шевченка 5</a></li>
                         </ul>
                         <div class="footer__icons-grouped">
-                            <a href="">
+                            <a href="" class="footer__icons-link">
                                 <svg height="42" width="42" class="contact-icons footer__icons">
                                     <use href="/images/icons.svg#icon-phone"></use>
                                 </svg>
                             </a>
-                            <a href="">
+                            <a href="" class="footer__icons-link">
                                 <svg height="42" width="42" class="contact-icons footer__icons">
                                     <use href="/images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
-                            <a href="">
+                            <a href="" class="footer__icons-link">
                                 <svg height="42" width="42" class="contact-icons footer__icons">
                                     <use href="/images/icons.svg#icon-instagram"></use>
                                 </svg>
@@ -332,6 +345,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/mobile-menu.js"></script>
     <script src="js/formats-slider.js"></script>
     <script src="js/modal.js"></script>
 </body>

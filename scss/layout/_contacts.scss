@@ -5,12 +5,25 @@
 .contacts-section {
     &__container {
         display: flex;
+        flex-flow: column-reverse;
         gap: 32px;
         justify-content: center;
+
+        @media screen and (min-width: $bp-desktop) {
+            flex-direction: row;
+        }
     }
     &__map {
+
         flex-shrink: 0;
-        border-radius: 32px;
+        width: 100%;
+        padding: 0 -20px;
+
+        @media screen and (min-width: $bp-desktop) {
+            border-radius: 32px;
+            height: 481px;
+            width:605px; 
+        }
     }
 
     &__form-field {

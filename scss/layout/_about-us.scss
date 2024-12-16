@@ -22,4 +22,11 @@
             margin-bottom: 0;
         }
     }
+
+    &__side-image { 
+        display: none;
+         @media screen and (min-width: $bp-desktop) {
+        display: block;
+    }
+    }
 }

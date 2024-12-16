@@ -4,8 +4,14 @@
     &__wrap {
         display: flex;
         align-items: center;
-        gap: 56px;
+        flex-direction: column;
+        gap: 16px;
         justify-content: center;
+
+        @media screen and (min-width: $bp-desktop) {
+            flex-direction: row;
+            gap: 56px;
+        }
     }
 
     &__title {
@@ -13,7 +19,7 @@
         margin-bottom: 48px;
         max-width: 450px;
     }
-    
+
     &__item {
         background-color: var(--white);
         border-radius: 32px;

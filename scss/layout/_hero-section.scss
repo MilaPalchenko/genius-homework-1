@@ -15,21 +15,32 @@
 
 .hero-container {
     display: flex;
-    flex-direction: column;
 
-    align-items: baseline;
-    flex-basis: 529px;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
+
+    @media screen and (min-width: $bp-desktop) {
+        align-items: baseline;
+        flex-basis: 529px;
+    }
+    
     
     &__title {
         color: var(--accent-main-color);
         font-family: var(--secondary-font-play);
-        font-size: 140px;
+        font-size: 54px;
         font-weight: 700;
-    
         margin-bottom: 40px;
-        line-height: 0.9;
+        line-height: 0.8;
+        
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 140px;
+            font-weight: 700;
+            line-height: 0.9;
+        
         width: 529px;
+        }
     }
 
     &__text {
@@ -37,5 +48,10 @@
         font-size: 12px;
         line-height: 1.5;
         max-width: 238px;
+        text-align: center;
+
+        @media screen and (min-width: $bp-tablet) {
+            text-align: left;
+        }
     }
 }

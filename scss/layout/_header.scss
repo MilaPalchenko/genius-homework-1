@@ -2,19 +2,24 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 32px 0;
     width: 100%;
+    padding: 16px;
+    
+    
+    @media screen and (min-width: $bp-desktop) {
+        
+        background-color: #ffffff40;
+        backdrop-filter: blur(5px);
+        padding: 32px 0;
+    }
 
-    background-color: #ffffff40;
-    backdrop-filter: blur(5px);
-
-    &__container{ 
+    &__container {
         display: flex;
         align-items: center;
         gap: 40px;
     }
 
-    &__nav { 
+    &__nav {
         display: flex;
         align-items: center;
         flex-grow: 1;
@@ -22,13 +27,31 @@
     }
 
     &__menu {
-        display: flex;
-        flex-grow: 1;
-        gap: 56px;
-        justify-content: center;
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            flex-grow: 1;
+            gap: 56px;
+            justify-content: center;
+        }
     }
 
-    &__icons { 
+    &__icons {
         fill: var(--secondary-main-color);
+    }
+
+    &__burger {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        
+        background-color: transparent;
+        border: none;
+        fill: var(--white);
+
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
     }
 }
