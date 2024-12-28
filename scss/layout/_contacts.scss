@@ -1,5 +1,14 @@
 .contacts {
-    padding-bottom: 96px;
+        padding-bottom: 96px;
+   
+
+    &.section { 
+        padding: 0;
+        @media screen and (min-width: $bp-desktop) {
+            padding-bottom: 96px;
+            
+        }
+    }
 }
 
 .contacts-section {
@@ -9,17 +18,17 @@
         gap: 32px;
         justify-content: center;
 
-        @media screen and (min-width: $bp-mobile) {
+        @media screen and (min-width: $bp-desktop) {
             flex-direction: row;
         }
     }
     &__map {
-
         flex-shrink: 0;
-        width: 100%;
+        height: 232px;
+        margin: 0 -20px;
         padding: 0 -20px;
 
-        @media screen and (min-width: $bp-mobile) {
+        @media screen and (min-width: $bp-desktop) {
             border-radius: 32px;
             height: 481px;
             width:605px; 
@@ -50,6 +59,10 @@
         max-width: 423px;
         height: 100%;
         width: 100%;
+
+        @media screen and (max-width: $bp-desktop) {
+            margin: 0 auto;
+        }
     }
     &__title {
         color: var(--white);

@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
     <link rel="stylesheet" href="dist/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Beauty Zone</title>
@@ -54,12 +52,38 @@
                 </button>
 
             </div>
-            <div class="mobile-menu">
+            <div class="mobile-menu mobile">
                 <button class="mobile-menu__btn-close menu-btn-close" type="button">
                     <svg height="12" width="12" class="mobile-menu__burger-icon">
                         <use href="/images/icons.svg#icon-burger-close"></use>
                     </svg>
                 </button>
+                <a href="/" class="mobile__logo">
+                    <img src="/images/logo.svg" alt="company-logo">
+                </a>
+                <ul class="mobile__links-group">
+                    <li><a class="mobile__link" href="#about-us">Про нас</a></li>
+                    <li><a class="mobile__link" href="#why-us">Чому ми</a></li>
+                    <li><a class="mobile__link" href="#our-procedures">Наші процедури</a></li>
+                    <li><a class="mobile__link" href="#contacts">Контакти</a></li>
+                </ul>
+                <div class="mobile__icons-grouped">
+                    <a href="" class="mobile__icons-link">
+                        <svg height="42" width="42" class="contact-icons mobile__icons">
+                            <use href="/images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="mobile__icons-link">
+                        <svg height="42" width="42" class="contact-icons mobile__icons">
+                            <use href="/images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="" class="mobile__icons-link">
+                        <svg height="42" width="42" class="contact-icons mobile__icons">
+                            <use href="/images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -80,7 +104,7 @@
             <section class="section" id="about-us">
                 <div class="container">
                     <div class="background-image">
-
+                        <!-- Empty div just for the stretching background image on multiople sections -->
                     </div>
                     <div class="about__container">
                         <article>
@@ -152,52 +176,46 @@
                         <div class="swiper-container">
                             <ul class="our-procedures__list swiper-wrapper">
                                 <li class="our_procedures__item swiper-slide">
-                                    <article class="our-procedures__card">
-                                        <div class="our-procedures__container">
+                                    <article class="our-procedures__container">
                                             <img src="images/procedures-image-1.jpg" alt="" class="formats__image">
                                             <h3 class="our-procedures__title">Маски для обличчя</h3>
-                                        </div>
+                                       
                                     </article>
                                 </li>
                                 <li class="our-procedures__item swiper-slide">
-                                    <article class="our-procedures__card">
-                                        <div class="our-procedures__container">
+                                    <article class="our-procedures__container">
                                             <img src="images/procedures-image-2.jpg" alt="" class="formats__image">
                                             <h3 class="our-procedures__title">Маски для обличчя</h3>
-                                        </div>
+                                      
                                     </article>
                                 </li>
                                 <li class="our-procedures__item swiper-slide">
-                                    <article class="our-procedures__card">
-                                        <div class="our-procedures__container">
+                                    <article class="our-procedures__container">
                                             <img src="images/procedures-image-3.jpg" alt="" class="formats__image">
                                             <h3 class="our-procedures__title">Маски для обличчя</h3>
-                                        </div>
+
                                     </article>
                                 </li>
                                 <li class="our_procedures__item swiper-slide">
-                                    <article class="our-procedures__card">
-                                        <div class="our-procedures__container">
+                                    <article class="our-procedures__container">
                                             <img src="images/procedures-image-1.jpg" alt="" class="formats__image">
                                             <h3 class="our-procedures__title">Маски для обличчя</h3>
-                                        </div>
+
                                     </article>
 
                                 </li>
                                 <li class="our-procedures__item swiper-slide">
-                                    <article class="our-procedures__card">
-                                        <div class="our-procedures__container">
+                                    <article class="our-procedures__container">
                                             <img src="images/procedures-image-2.jpg" alt="" class="formats__image">
                                             <h3 class="our-procedures__title">Маски для обличчя</h3>
-                                        </div>
+
                                     </article>
                                 </li>
                                 <li class="our-procedures__item swiper-slide">
-                                    <article class="our-procedures__card">
-                                        <div class="our-procedures__container">
+                                    <article class="our-procedures__container">
                                             <img src="images/procedures-image-3.jpg" alt="" class="formats__image">
                                             <h3 class="our-procedures__title">Маски для обличчя</h3>
-                                        </div>
+
                                     </article>
                                 </li>
                             </ul>
@@ -319,7 +337,11 @@
 
     <div class="backdrop is-hidden">
         <div class="modal">
-            <button class="modal__btn-close modal-btn-close" type="submit">Close</button>
+            <button class="modal__btn-close modal-btn-close" type="submit">
+                <svg height="42" width="42" class="modal__icon-close">
+                    <use href="/images/icons.svg#icon-burger-close"></use>
+                </svg>
+            </button>
             <h2 class="modal__title">Замовити дзвінок</h2>
             <p class="modal__text"> Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок</p>
             <form name="modal-form" autocomplete="off" novalidate>

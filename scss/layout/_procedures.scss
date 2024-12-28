@@ -8,9 +8,7 @@
 }
 
 .our-procedures {
-    &__card {   
-        transition: transform 0.3s;
-    }
+   
     &__container { 
         position: relative;
 
@@ -27,7 +25,7 @@
         );
         border-radius: 4px 120px;
         height: 456px;
-        width: 344px;
+        transition: transform 0.3s;
     }
 
     &__title {
@@ -44,10 +42,6 @@
         display: flex;
         margin-bottom: 32px;
     }
-
-    &__item {
-        flex-basis: calc((100% - 40px) / 3);
-    }
 }
 
 .formats {
@@ -55,10 +49,12 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        z-index: -1;
 
         border-radius: 4px 120px;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
     }
 }
 

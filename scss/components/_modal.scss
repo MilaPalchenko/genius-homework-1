@@ -57,6 +57,9 @@
         position: absolute;
         top: 50px;
         right: 50px;
+
+        background-color: transparent;
+        border: none;
     }
     &__btn {
         display: block;
@@ -70,5 +73,9 @@
     }
     &__form-field {
         margin-bottom: 24px;
+    }
+
+    &__icon-close { 
+        fill: var(--white);
     }
 }

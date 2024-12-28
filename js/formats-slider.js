@@ -5,11 +5,11 @@ const swiper = new Swiper('.swiper-container', {
     spaceBetween: 16,
     breakpoints: {
         // when window width is >= 480px
-        480: {
+        768: {
           slidesPerView: 2,
         },
         // when window width is >= 768px
-        768: {
+        1280: {
           slidesPerView: 3,
         },
     },
