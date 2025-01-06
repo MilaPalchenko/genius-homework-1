@@ -3,15 +3,27 @@
         display: flex;
         gap: 40px;
         justify-content: space-between;
+
+        @media screen and (max-width: $bp-mobile) {
+            margin-top: -50px;
+        }
     }
+    
     &__title {
-        font-family: var(--secondary-font-play);
+        font-family: var(--main-font-roboto);
+        font-weight: 700;
         max-width: 529px;
     }
+
     &__text {
         color: var(--secondary-main-color);
         font-size: 22px;
-        line-height: 1.8;
+        line-height: 1.17;
+
+        @media screen and (min-width: $bp-tablet) {
+            line-height: 1.8;
+        }
+
         margin-bottom: 40px;
         max-width: 709px;
         &--accent { 

@@ -114,17 +114,35 @@ a {
   background-image: url(/images/background-rest.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: -550px -250px;
+}
+@media screen and (min-width: 480px) {
+  .background-multisection {
+    background-position: 0px 0px;
+  }
 }
 
 .section {
-  padding: 48px 0;
+  padding: 20px 0;
+}
+@media screen and (min-width: 480px) {
+  .section {
+    padding: 48px 0;
+  }
 }
 
 .section-title {
   color: var(--secondary-main-color);
-  font-family: var(--secondary-font-play);
+  font-family: var(--main-font-roboto);
   font-size: 32px;
   font-weight: 500;
+  width: 230px;
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    width: 550px;
+    font-size: 48px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .section-title {
@@ -269,6 +287,7 @@ p .accent {
 .modal {
   position: relative;
   background-color: var(--secondary-main-color);
+  background-image: url(/images/background-texture.svg);
   border-radius: 48px;
   padding: 42px 144px;
   overflow-y: auto;
@@ -450,16 +469,27 @@ p .accent {
   gap: 40px;
   justify-content: space-between;
 }
+@media screen and (max-width: 480px) {
+  .about__container {
+    margin-top: -50px;
+  }
+}
 .about__title {
-  font-family: var(--secondary-font-play);
+  font-family: var(--main-font-roboto);
+  font-weight: 700;
   max-width: 529px;
 }
 .about__text {
   color: var(--secondary-main-color);
   font-size: 22px;
-  line-height: 1.8;
+  line-height: 1.17;
   margin-bottom: 40px;
   max-width: 709px;
+}
+@media screen and (min-width: 768px) {
+  .about__text {
+    line-height: 1.8;
+  }
 }
 .about__text--accent {
   font-weight: 600;
@@ -494,8 +524,13 @@ p .accent {
 }
 .why-us__title {
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   max-width: 450px;
+}
+@media screen and (min-width: 480px) {
+  .why-us__title {
+    margin-bottom: 48px;
+  }
 }
 .why-us__item {
   background-color: var(--white);
@@ -526,8 +561,19 @@ p .accent {
   justify-content: flex-end;
   background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, var(--secondary-main-color) 101.39%);
   border-radius: 4px 120px;
-  height: 456px;
+  margin: 0 auto;
+  height: 416px;
+  width: 320px;
   transition: transform 0.3s;
+}
+.our-procedures__main-title {
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 480px) {
+  .our-procedures__main-title {
+    margin-bottom: 48px;
+  }
 }
 .our-procedures__title {
   color: var(--white);
@@ -563,7 +609,7 @@ p .accent {
   padding-bottom: 96px;
 }
 .contacts.section {
-  padding: 0;
+  padding: 20px 0;
 }
 @media screen and (min-width: 1280px) {
   .contacts.section {
@@ -610,9 +656,9 @@ p .accent {
 
 .contacts__form {
   background-color: var(--secondary-main-color);
+  background-image: url(/images/background-texture.svg);
   border-radius: 32px;
   padding: 48px 57px;
-  max-height: 482px;
   max-width: 423px;
   height: 100%;
   width: 100%;
@@ -620,6 +666,15 @@ p .accent {
 @media screen and (max-width: 1280px) {
   .contacts__form {
     margin: 0 auto;
+  }
+}
+.contacts__main-title {
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 480px) {
+  .contacts__main-title {
+    margin-bottom: 48px;
   }
 }
 .contacts__title {
@@ -635,6 +690,7 @@ p .accent {
 .footer {
   position: relative;
   background: var(--secondary-main-color);
+  background-image: url(/images/background-texture.svg);
   font-size: 16px;
   padding: 56px 0;
 }
@@ -745,6 +801,7 @@ p .accent {
   transition: transform 0.5s ease;
   width: 100vw;
   height: 100vh;
+  z-index: 30;
 }
 @media screen and (min-width: 1280px) {
   .mobile-menu {
