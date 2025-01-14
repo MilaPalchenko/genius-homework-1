@@ -67,6 +67,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 48px;
+}
+
 body {
   font-family: var(--main-font-roboto);
   font-size: 18px;
@@ -352,11 +357,15 @@ p .accent {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 16px;
+  z-index: 30;
+  background-color: rgba(255, 255, 255, 0.2509803922);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 @media screen and (min-width: 1280px) {
   .header {
@@ -397,7 +406,7 @@ p .accent {
   right: 16px;
   background-color: transparent;
   border: none;
-  fill: var(--white);
+  fill: var(--secondary-main-color);
 }
 @media screen and (min-width: 1280px) {
   .header__burger {
@@ -410,11 +419,12 @@ p .accent {
   background-repeat: no-repeat;
   background-position: right top;
   background-size: cover;
-  padding: 123px 0;
+  padding: 84px 0;
 }
 @media screen and (min-width: 480px) {
   .hero-section {
     background-image: url(/images/hero-background.svg);
+    padding: 123px 0;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -468,11 +478,6 @@ p .accent {
   display: flex;
   gap: 40px;
   justify-content: space-between;
-}
-@media screen and (max-width: 480px) {
-  .about__container {
-    margin-top: -50px;
-  }
 }
 .about__title {
   font-family: var(--main-font-roboto);

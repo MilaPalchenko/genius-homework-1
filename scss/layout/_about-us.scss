@@ -3,10 +3,6 @@
         display: flex;
         gap: 40px;
         justify-content: space-between;
-
-        @media screen and (max-width: $bp-mobile) {
-            margin-top: -50px;
-        }
     }
     
     &__title {

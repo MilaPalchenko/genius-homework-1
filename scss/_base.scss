@@ -3,7 +3,10 @@
 *::before {
     box-sizing: border-box;
 }
-
+html { 
+    scroll-behavior: smooth;
+    scroll-padding-top: 48px;
+}
 body {
     font-family: var(--main-font-roboto);
     font-size: 18px;
