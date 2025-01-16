@@ -9,6 +9,8 @@
     bottom: 0;
     left: 0;
 
+    z-index: 33;
+
     background-color: rgba(1, 31, 74, 0.4);
     padding: 20px 0;
 
@@ -26,15 +28,31 @@
 .modal {
     position: relative;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    // to prevernt mobile scroll when menu open
+    touch-action: none;
+
     background-color: var(--secondary-main-color);
     background-image: url(/images/background-texture.svg);
-    border-radius: 48px;
-    padding: 42px 144px;
+    padding: 16px 32px;
+    
     overflow-y: auto;
-    max-height: 732px;
-    height: 100%;
-    max-width: 681px;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+   
+
+    @media screen and (min-width: $bp-mobile) {
+        border-radius: 48px;
+        padding: 42px 144px;
+        max-height: 732px;
+        height: 100%;
+        max-width: 681px;
+        width: 100%;
+    }
 
     &__title,
     &__text {
@@ -44,9 +62,13 @@
 
     &__title {
         font-family: var(--secondary-font-play);
-        font-size: 64px;
+        font-size: 36px;
         font-weight: 700;
         margin-bottom: 40px;
+
+        @media screen and (min-width: $bp-mobile) {
+            font-size: 64px;
+        }
     }
     &__text {
         font-size: 22px;
@@ -56,11 +78,16 @@
     }
     &__btn-close {
         position: absolute;
-        top: 50px;
-        right: 50px;
-
+        top: 16px;
+        right: 20px;
+        
         background-color: transparent;
         border: none;
+
+        @media screen and (min-width: $bp-mobile) {
+            top: 50px;
+            right: 50px;
+        }
     }
     &__btn {
         display: block;
@@ -78,5 +105,11 @@
 
     &__icon-close { 
         fill: var(--white);
+        height: 12px;
+        width: 12px;
+        @media screen and (min-width: $bp-mobile) {
+            height: 42px;
+            width: 42px;
+        }
     }
 }
